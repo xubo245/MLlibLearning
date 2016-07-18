@@ -5,6 +5,8 @@ hadoop2.6.0
 scala-2.10.4
 idea 15.0.4
 
+注：代码请见https://github.com/xubo245/SparkLearning的src文件夹
+
 Spark mllib学习目录：
 
 **1.数据类型**
