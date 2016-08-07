@@ -5,13 +5,10 @@ hadoop2.6.0
 scala-2.10.4
 idea 15.0.4
 
-注：代码请见SparkLearning的src文件夹: https://github.com/xubo245/SparkLearning
-
 Spark mllib学习目录：
 
 **1.数据类型**
 
-	Spark中组件Mllib的学习3之用户相似度计算
 	Spark中组件Mllib的学习12之密集向量和稀疏向量的生成
 	Spark中组件Mllib的学习13之给向量打标签
 	Spark中组件Mllib的学习14之从文本中读取带标签的数据，生成带label的向量

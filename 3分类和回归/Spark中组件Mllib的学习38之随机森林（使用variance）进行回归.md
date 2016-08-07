@@ -1,9 +1,6 @@
-更多代码请见：https://github.com/xubo245/SparkLearning
-
-Spark中组件Mllib的学习之分类篇
-
-1解释
-
+	更多代码请见：https://github.com/xubo245/SparkLearning
+	Spark中组件Mllib的学习之分类篇
+1解释  
 	随机森林（使用variance）进行回归
 	
 	

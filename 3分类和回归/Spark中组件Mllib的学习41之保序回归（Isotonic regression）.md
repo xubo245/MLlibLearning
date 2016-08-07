@@ -1,18 +1,18 @@
-	更多代码请见：https://github.com/xubo245/SparkLearning
-	Spark中组件Mllib的学习之分类篇
-	1解释
-	
-	    问题描述：给定一个无序数字序列，要求不改变每个元素的位置，但可以修改每个元素的值，修改后得到一个非递减序列，问如何使误差（该处取平方差）最小？
-	    保序回归法：从该序列的首元素往后观察，一旦出现乱序现象停止该轮观察，从该乱序元素开始逐个吸收元素组成一个序列，直到该序列所有元素的平均值小于或等于下一个待吸收的元素。
-	    举例：
-	    原始序列：<9, 10, 14>
-	    结果序列：<9, 10, 14>
-	    分析：从9往后观察，到最后的元素14都未发现乱序情况，不用处理。
-	    原始序列：<9, 14, 10>
-	    结果序列：<9, 12, 12>
-	参考【4】
-	
-	2.代码：
+更多代码请见：https://github.com/xubo245/SparkLearning  
+Spark中组件Mllib的学习之分类篇  
+1解释  
+
+    问题描述：给定一个无序数字序列，要求不改变每个元素的位置，但可以修改每个元素的值，修改后得到一个非递减序列，问如何使误差（该处取平方差）最小？
+    保序回归法：从该序列的首元素往后观察，一旦出现乱序现象停止该轮观察，从该乱序元素开始逐个吸收元素组成一个序列，直到该序列所有元素的平均值小于或等于下一个待吸收的元素。
+    举例：
+    原始序列：<9, 10, 14>
+    结果序列：<9, 10, 14>
+    分析：从9往后观察，到最后的元素14都未发现乱序情况，不用处理。
+    原始序列：<9, 14, 10>
+    结果序列：<9, 12, 12>
+参考【4】
+
+2.代码：
 	
 	```
 	/**
@@ -95,8 +95,8 @@
 	}
 	
 	```
-	
-	3.结果：
+
+3.结果：
 	
 	```
 	Mean Squared Error = 0.004883368896285485
@@ -135,8 +135,9 @@
 	2016-05-25 16:58:04 WARN  ParquetRecordReader:193 - Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
 	true
 	```
+
+参考
 	
-	参考
 	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
 	【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
 	【3】https://github.com/xubo245/SparkLearning
